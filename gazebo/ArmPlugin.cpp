@@ -71,7 +71,6 @@
 #define DEBUG false
 #define DEBUG_Camera false
 #define DEBUG_Collision true
-#define DEBUGV false
 #define DEBUG_Action false
 #define DEBUG_Reward true
 #define DEBUG_Reward2 false
@@ -644,20 +643,16 @@ void ArmPlugin::OnUpdate(const common::UpdateInfo& updateInfo)
 
 				float rewardDist = -pow((1+distGoal), 3) / 20; 
 				rewardHistory = avgGoalDelta * 4 + rewardDist;
-           newReward = true;
+           		newReward = true;
               
 				if(DEBUG_Reward) {
-              printf("rewardHistory is %0.3f, avgGoalDelta is %0.6f, rewardDist is %0.6f\n", rewardHistory, avgGoalDelta * 4, rewardDist);
-			
-              //printf("propBBox.min.x is %0.3f, max.x is %0.3f, max.z is %0.3f\n", propBBox.min.x, propBBox.max.x, propBBox.max.z);
-              //printf("gripBBox.min.x is %0.3f, max.x is %0.3f, min.z is %0.3f, max.z is %0.3f\n", gripBBox.min.x, gripBBox.max.x, gripBBox.min.z, gripBBox.max.z);
-                }
-              
+              		printf("rewardHistory is %0.3f, avgGoalDelta is %0.6f, rewardDist is %0.6f\n", rewardHistory, avgGoalDelta * 4, rewardDist);
+              		//printf("propBBox.min.x is %0.3f, max.x is %0.3f, max.z is %0.3f\n", propBBox.min.x, propBBox.max.x, propBBox.max.z);
+              		//printf("gripBBox.min.x is %0.3f, max.x is %0.3f, min.z is %0.3f, max.z is %0.3f\n", gripBBox.min.x, gripBBox.max.x, gripBBox.min.z, gripBBox.max.z);
+                }             
             }
-			lastGoalDistance = distGoal;
-                
-        }
-	
+			lastGoalDistance = distGoal;       
+        }	
 	}
 
 	// issue rewards and train DQN
