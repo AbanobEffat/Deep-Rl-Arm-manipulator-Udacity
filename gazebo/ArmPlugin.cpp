@@ -278,18 +278,18 @@ void ArmPlugin::onCollisionMsg(ConstContactsPtr &contacts)
 		/
 		*/
 		if((strcmp(contacts->contact(i).collision1().c_str(), COLLISION_ITEM) == 0 ) )
-			{
+		{
            if ((strcmp(contacts->contact(i).collision2().c_str(), COLLISION_POINT) == 0) || (strcmp(contacts->contact(i).collision2().c_str(), COLLISION_MIDDLE) == 0))
            {
              rewardHistory = REWARD_WIN;
              newReward = true;
              endEpisode = true;
-			   }
-			   else {
-				  rewardHistory = REWARD_LOSS/10;
-				  newReward = true;
-			 	  endEpisode = true;
-			   }
+			}
+			else {
+				rewardHistory = REWARD_LOSS/10;
+				newReward = true;
+				endEpisode = true;
+			}
         }
         
 		return;		
@@ -497,8 +497,6 @@ static float BoxDistance(const math::Box& a, const math::Box& b)
 {
 	float sqrDist = 0;
 
-  
-  
 	if( b.max.x < a.min.x )
 	{
 		float d = b.max.x - (a.min.x+0.6);
@@ -530,8 +528,8 @@ static float BoxDistance(const math::Box& a, const math::Box& b)
 		float d = b.min.z - a.max.z;
 		sqrDist += d * d;
 	}
-  */
-  float d = (a.max.z+a.min.z)/2 - 0.1 -  b.min.z;
+  	*/
+  	float d = (a.max.z+a.min.z)/2 - 0.1 -  b.min.z;
 	sqrDist += d*d;
   
 	return sqrtf(sqrDist);
