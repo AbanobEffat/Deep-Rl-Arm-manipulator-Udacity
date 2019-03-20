@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule:
+	cd /home/workspace/RoboND-DeepRL-Project/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
+.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
+
+# Convenience name for target.
+gazeboGraspPlugin: gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
+
+.PHONY : gazeboGraspPlugin
+
+# fast build rule for target.
+gazeboGraspPlugin/fast:
+	cd /home/workspace/RoboND-DeepRL-Project/build && $(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/build
+.PHONY : gazeboGraspPlugin/fast
+
+# Convenience name for target.
 gazebo/CMakeFiles/gazeboArmPlugin.dir/rule:
 	cd /home/workspace/RoboND-DeepRL-Project/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo/CMakeFiles/gazeboArmPlugin.dir/rule
 .PHONY : gazebo/CMakeFiles/gazeboArmPlugin.dir/rule
@@ -139,21 +154,6 @@ gazeboPropPlugin: gazebo/CMakeFiles/gazeboPropPlugin.dir/rule
 gazeboPropPlugin/fast:
 	cd /home/workspace/RoboND-DeepRL-Project/build && $(MAKE) -f gazebo/CMakeFiles/gazeboPropPlugin.dir/build.make gazebo/CMakeFiles/gazeboPropPlugin.dir/build
 .PHONY : gazeboPropPlugin/fast
-
-# Convenience name for target.
-gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule:
-	cd /home/workspace/RoboND-DeepRL-Project/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
-.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
-
-# Convenience name for target.
-gazeboGraspPlugin: gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
-
-.PHONY : gazeboGraspPlugin
-
-# fast build rule for target.
-gazeboGraspPlugin/fast:
-	cd /home/workspace/RoboND-DeepRL-Project/build && $(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/build
-.PHONY : gazeboGraspPlugin/fast
 
 ArmPlugin.o: ArmPlugin.cpp.o
 
@@ -270,10 +270,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... gazeboGraspPlugin"
 	@echo "... gazeboArmPlugin"
 	@echo "... gazeboPropPlugin"
-	@echo "... gazeboGraspPlugin"
-	@echo "... rebuild_cache"
 	@echo "... ArmPlugin.o"
 	@echo "... ArmPlugin.i"
 	@echo "... ArmPlugin.s"

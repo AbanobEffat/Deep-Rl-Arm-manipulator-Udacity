@@ -5525,6 +5525,8 @@ ignition/math/Angle.hh
 -
 ignition/math/Box.hh
 -
+ignition/math/Color.hh
+-
 ignition/math/Filter.hh
 -
 ignition/math/Frustum.hh
@@ -5533,15 +5535,23 @@ ignition/math/Helpers.hh
 -
 ignition/math/IndexException.hh
 -
+ignition/math/Inertial.hh
+-
 ignition/math/Kmeans.hh
 -
 ignition/math/Line2.hh
 -
 ignition/math/Line3.hh
 -
+ignition/math/MassMatrix3.hh
+-
 ignition/math/Matrix3.hh
 -
 ignition/math/Matrix4.hh
+-
+ignition/math/OrientedBox.hh
+-
+ignition/math/PID.hh
 -
 ignition/math/Plane.hh
 -
@@ -5553,15 +5563,25 @@ ignition/math/Rand.hh
 -
 ignition/math/RotationSpline.hh
 -
+ignition/math/SemanticVersion.hh
+-
 ignition/math/SignalStats.hh
+-
+ignition/math/SphericalCoordinates.hh
 -
 ignition/math/Spline.hh
 -
+ignition/math/Temperature.hh
+-
 ignition/math/Triangle.hh
+-
+ignition/math/Triangle3.hh
 -
 ignition/math/Vector2.hh
 -
 ignition/math/Vector3.hh
+-
+ignition/math/Vector3Stats.hh
 -
 ignition/math/Vector4.hh
 -
@@ -5581,9 +5601,13 @@ ignition/math/Helpers.hh
 /usr/include/ignition/math2/ignition/math/Box.hh
 iostream
 -
+tuple
+-
 ignition/math/Helpers.hh
 -
 ignition/math/Vector3.hh
+-
+ignition/math/Line3.hh
 -
 
 /usr/include/ignition/math2/ignition/math/Filter.hh
@@ -5615,18 +5639,16 @@ iostream
 -
 vector
 -
+tuple
+-
+cstdint
+-
 
 /usr/include/ignition/math2/ignition/math/IndexException.hh
 stdexcept
 -
 ignition/math/Helpers.hh
 -
-
-/usr/include/ignition/math2/ignition/math/Inertial.hh
-ignition/math/MassMatrix3.hh
-/usr/include/ignition/math2/ignition/math/ignition/math/MassMatrix3.hh
-ignition/math/Pose3.hh
-/usr/include/ignition/math2/ignition/math/ignition/math/Pose3.hh
 
 /usr/include/ignition/math2/ignition/math/Kmeans.hh
 vector
@@ -5652,25 +5674,9 @@ ignition/math/Vector3.hh
 ignition/math/IndexException.hh
 -
 
-/usr/include/ignition/math2/ignition/math/MassMatrix3.hh
+/usr/include/ignition/math2/ignition/math/Matrix3.hh
 algorithm
 -
-string
--
-vector
--
-ignition/math/Helpers.hh
-/usr/include/ignition/math2/ignition/math/ignition/math/Helpers.hh
-ignition/math/Quaternion.hh
-/usr/include/ignition/math2/ignition/math/ignition/math/Quaternion.hh
-ignition/math/Vector2.hh
-/usr/include/ignition/math2/ignition/math/ignition/math/Vector2.hh
-ignition/math/Vector3.hh
-/usr/include/ignition/math2/ignition/math/ignition/math/Vector3.hh
-ignition/math/Matrix3.hh
-/usr/include/ignition/math2/ignition/math/ignition/math/Matrix3.hh
-
-/usr/include/ignition/math2/ignition/math/Matrix3.hh
 cstring
 -
 ignition/math/Vector3.hh
@@ -5679,7 +5685,7 @@ ignition/math/Quaternion.hh
 -
 
 /usr/include/ignition/math2/ignition/math/Matrix4.hh
-ignition/math/Helpers.hh
+algorithm
 -
 ignition/math/AffineException.hh
 -
@@ -5711,6 +5717,8 @@ ignition/math/Angle.hh
 -
 ignition/math/Vector3.hh
 -
+ignition/math/Matrix3.hh
+-
 
 /usr/include/ignition/math2/ignition/math/Rand.hh
 random
@@ -5718,6 +5726,8 @@ random
 cmath
 -
 cstdint
+-
+memory
 -
 ignition/math/Helpers.hh
 -

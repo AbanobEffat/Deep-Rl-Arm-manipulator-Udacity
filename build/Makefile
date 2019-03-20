@@ -124,6 +124,19 @@ jetson-reinforcement/fast:
 .PHONY : jetson-reinforcement/fast
 
 #=============================================================================
+# Target rules for targets named gazeboGraspPlugin
+
+# Build rule for target.
+gazeboGraspPlugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazeboGraspPlugin
+.PHONY : gazeboGraspPlugin
+
+# fast build rule for target.
+gazeboGraspPlugin/fast:
+	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/build
+.PHONY : gazeboGraspPlugin/fast
+
+#=============================================================================
 # Target rules for targets named gazeboArmPlugin
 
 # Build rule for target.
@@ -148,19 +161,6 @@ gazeboPropPlugin: cmake_check_build_system
 gazeboPropPlugin/fast:
 	$(MAKE) -f gazebo/CMakeFiles/gazeboPropPlugin.dir/build.make gazebo/CMakeFiles/gazeboPropPlugin.dir/build
 .PHONY : gazeboPropPlugin/fast
-
-#=============================================================================
-# Target rules for targets named gazeboGraspPlugin
-
-# Build rule for target.
-gazeboGraspPlugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazeboGraspPlugin
-.PHONY : gazeboGraspPlugin
-
-# fast build rule for target.
-gazeboGraspPlugin/fast:
-	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/build
-.PHONY : gazeboGraspPlugin/fast
 
 #=============================================================================
 # Target rules for targets named catch
@@ -394,11 +394,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 	@echo "... jetson-reinforcement"
+	@echo "... rebuild_cache"
+	@echo "... gazeboGraspPlugin"
 	@echo "... gazeboArmPlugin"
 	@echo "... gazeboPropPlugin"
-	@echo "... gazeboGraspPlugin"
 	@echo "... catch"
 	@echo "... fruit"
 	@echo "... deepRL-console"

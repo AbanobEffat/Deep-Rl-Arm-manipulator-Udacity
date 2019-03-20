@@ -100,16 +100,16 @@ clean: CMakeFiles/jetson-reinforcement.dir/clean
 # Directory level rules for directory gazebo
 
 # Convenience name for "all" pass in the directory.
+gazebo/all: gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
 gazebo/all: gazebo/CMakeFiles/gazeboArmPlugin.dir/all
 gazebo/all: gazebo/CMakeFiles/gazeboPropPlugin.dir/all
-gazebo/all: gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
 
 .PHONY : gazebo/all
 
 # Convenience name for "clean" pass in the directory.
+gazebo/clean: gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
 gazebo/clean: gazebo/CMakeFiles/gazeboArmPlugin.dir/clean
 gazebo/clean: gazebo/CMakeFiles/gazeboPropPlugin.dir/clean
-gazebo/clean: gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
 
 .PHONY : gazebo/clean
 
@@ -117,6 +117,44 @@ gazebo/clean: gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
 gazebo/preinstall:
 
 .PHONY : gazebo/preinstall
+
+#=============================================================================
+# Target rules for target gazebo/CMakeFiles/gazeboGraspPlugin.dir
+
+# All Build rule for target.
+gazebo/CMakeFiles/gazeboGraspPlugin.dir/all: CMakeFiles/jetson-reinforcement.dir/all
+gazebo/CMakeFiles/gazeboGraspPlugin.dir/all: utils/CMakeFiles/jetson-utils.dir/all
+	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/depend
+	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/RoboND-DeepRL-Project/build/CMakeFiles --progress-num=13,14,15 "Built target gazeboGraspPlugin"
+.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
+
+# Include target in all.
+all: gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/RoboND-DeepRL-Project/build/CMakeFiles 28
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/RoboND-DeepRL-Project/build/CMakeFiles 0
+.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
+
+# Convenience name for target.
+gazeboGraspPlugin: gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
+
+.PHONY : gazeboGraspPlugin
+
+# clean rule for target.
+gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean:
+	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
+.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
+
+# clean rule for target.
+clean: gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target gazebo/CMakeFiles/gazeboArmPlugin.dir
@@ -191,44 +229,6 @@ gazebo/CMakeFiles/gazeboPropPlugin.dir/clean:
 
 # clean rule for target.
 clean: gazebo/CMakeFiles/gazeboPropPlugin.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target gazebo/CMakeFiles/gazeboGraspPlugin.dir
-
-# All Build rule for target.
-gazebo/CMakeFiles/gazeboGraspPlugin.dir/all: CMakeFiles/jetson-reinforcement.dir/all
-gazebo/CMakeFiles/gazeboGraspPlugin.dir/all: utils/CMakeFiles/jetson-utils.dir/all
-	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/depend
-	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/RoboND-DeepRL-Project/build/CMakeFiles --progress-num=13,14,15 "Built target gazeboGraspPlugin"
-.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
-
-# Include target in all.
-all: gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/RoboND-DeepRL-Project/build/CMakeFiles 28
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo/CMakeFiles/gazeboGraspPlugin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/RoboND-DeepRL-Project/build/CMakeFiles 0
-.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
-
-# Convenience name for target.
-gazeboGraspPlugin: gazebo/CMakeFiles/gazeboGraspPlugin.dir/rule
-
-.PHONY : gazeboGraspPlugin
-
-# clean rule for target.
-gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean:
-	$(MAKE) -f gazebo/CMakeFiles/gazeboGraspPlugin.dir/build.make gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
-.PHONY : gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
-
-# clean rule for target.
-clean: gazebo/CMakeFiles/gazeboGraspPlugin.dir/clean
 
 .PHONY : clean
 

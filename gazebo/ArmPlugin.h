@@ -83,14 +83,13 @@ private:
 	uint32_t animationStep;
 	float    resetPos[DOF];
 	float    lastGoalDistance;
-	float	 lastCenterDistance;
 	float    avgGoalDelta;
 	int	    successfulGrabs;
 	int	    totalRuns;
 	int      runHistoryIdx;
 	int	    runHistoryMax;
 	bool     runHistory[20];
-
+       
 	physics::ModelPtr model;
 	event::ConnectionPtr updateConnection;
 	physics::JointController* j2_controller;

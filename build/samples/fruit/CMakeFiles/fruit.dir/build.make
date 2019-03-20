@@ -57,33 +57,9 @@ include samples/fruit/CMakeFiles/fruit.dir/progress.make
 # Include the compile flags for this target's objects.
 include samples/fruit/CMakeFiles/fruit.dir/flags.make
 
-samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o: samples/fruit/CMakeFiles/fruit.dir/flags.make
-samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o: ../samples/fruit/fruit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/RoboND-DeepRL-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o"
-	cd /home/workspace/RoboND-DeepRL-Project/build/samples/fruit && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fruit.dir/fruit.cpp.o -c /home/workspace/RoboND-DeepRL-Project/samples/fruit/fruit.cpp
-
-samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fruit.dir/fruit.cpp.i"
-	cd /home/workspace/RoboND-DeepRL-Project/build/samples/fruit && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/RoboND-DeepRL-Project/samples/fruit/fruit.cpp > CMakeFiles/fruit.dir/fruit.cpp.i
-
-samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fruit.dir/fruit.cpp.s"
-	cd /home/workspace/RoboND-DeepRL-Project/build/samples/fruit && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/RoboND-DeepRL-Project/samples/fruit/fruit.cpp -o CMakeFiles/fruit.dir/fruit.cpp.s
-
-samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires:
-
-.PHONY : samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires
-
-samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires
-	$(MAKE) -f samples/fruit/CMakeFiles/fruit.dir/build.make samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides.build
-.PHONY : samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides
-
-samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides.build: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o
-
-
 samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o: samples/fruit/CMakeFiles/fruit.dir/flags.make
 samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o: ../samples/fruit/fruitEnv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/RoboND-DeepRL-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/RoboND-DeepRL-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o"
 	cd /home/workspace/RoboND-DeepRL-Project/build/samples/fruit && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fruit.dir/fruitEnv.cpp.o -c /home/workspace/RoboND-DeepRL-Project/samples/fruit/fruitEnv.cpp
 
 samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.i: cmake_force
@@ -105,16 +81,40 @@ samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o.provides: samples/fruit/CMakeF
 samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o.provides.build: samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o
 
 
+samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o: samples/fruit/CMakeFiles/fruit.dir/flags.make
+samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o: ../samples/fruit/fruit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/workspace/RoboND-DeepRL-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o"
+	cd /home/workspace/RoboND-DeepRL-Project/build/samples/fruit && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fruit.dir/fruit.cpp.o -c /home/workspace/RoboND-DeepRL-Project/samples/fruit/fruit.cpp
+
+samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fruit.dir/fruit.cpp.i"
+	cd /home/workspace/RoboND-DeepRL-Project/build/samples/fruit && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/workspace/RoboND-DeepRL-Project/samples/fruit/fruit.cpp > CMakeFiles/fruit.dir/fruit.cpp.i
+
+samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fruit.dir/fruit.cpp.s"
+	cd /home/workspace/RoboND-DeepRL-Project/build/samples/fruit && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/workspace/RoboND-DeepRL-Project/samples/fruit/fruit.cpp -o CMakeFiles/fruit.dir/fruit.cpp.s
+
+samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires:
+
+.PHONY : samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires
+
+samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires
+	$(MAKE) -f samples/fruit/CMakeFiles/fruit.dir/build.make samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides.build
+.PHONY : samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides
+
+samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.provides.build: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o
+
+
 # Object files for target fruit
 fruit_OBJECTS = \
-"CMakeFiles/fruit.dir/fruit.cpp.o" \
-"CMakeFiles/fruit.dir/fruitEnv.cpp.o"
+"CMakeFiles/fruit.dir/fruitEnv.cpp.o" \
+"CMakeFiles/fruit.dir/fruit.cpp.o"
 
 # External object files for target fruit
 fruit_EXTERNAL_OBJECTS =
 
-x86_64/bin/fruit: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o
 x86_64/bin/fruit: samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o
+x86_64/bin/fruit: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o
 x86_64/bin/fruit: samples/fruit/CMakeFiles/fruit.dir/build.make
 x86_64/bin/fruit: x86_64/lib/libjetson-reinforcement.so
 x86_64/bin/fruit: x86_64/lib/libjetson-utils.so
@@ -131,8 +131,8 @@ samples/fruit/CMakeFiles/fruit.dir/build: x86_64/bin/fruit
 
 .PHONY : samples/fruit/CMakeFiles/fruit.dir/build
 
-samples/fruit/CMakeFiles/fruit.dir/requires: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires
 samples/fruit/CMakeFiles/fruit.dir/requires: samples/fruit/CMakeFiles/fruit.dir/fruitEnv.cpp.o.requires
+samples/fruit/CMakeFiles/fruit.dir/requires: samples/fruit/CMakeFiles/fruit.dir/fruit.cpp.o.requires
 
 .PHONY : samples/fruit/CMakeFiles/fruit.dir/requires
 
